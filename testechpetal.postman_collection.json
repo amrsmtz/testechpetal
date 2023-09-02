@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "0478f881-8dd1-4b58-a459-c8512917b765",
+		"name": "testechpetal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14240266"
+	},
+	"item": [
+		{
+			"name": "show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/pokemons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pokemons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/pokemons/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pokemons",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"pokemon\": {\n    \"name\": \"Pikachette\",\n    \"type_1\": \"Electricette\",\n    \"total\": 320,\n    \"hp\": 35,\n    \"attack\": 55,\n    \"defense\": 40,\n    \"sp_atk\": 50,\n    \"sp_def\": 50,\n    \"speed\": 90,\n    \"generation\": 1,\n    \"legendary\": false\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/pokemons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pokemons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"pokemon\": {\n    \"name\": \"Pikachoij\",\n    \"type_1\": \"Electricoij\",\n    \"total\": 320,\n    \"hp\": 35,\n    \"attack\": 55,\n    \"defense\": 40,\n    \"sp_atk\": 50,\n    \"sp_def\": 50,\n    \"speed\": 90,\n    \"generation\": 1,\n    \"legendary\": false\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/pokemons/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pokemons",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "802"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/pokemons/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pokemons",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "203"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
